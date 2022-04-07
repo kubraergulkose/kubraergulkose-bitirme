@@ -1,0 +1,37 @@
+
+<header>
+  <div  class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-brand align-item-center d-flex">
+      <img src="assets/logo.png" class="img-logo" routerLink="/products" />
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="searchTerm"  (keyup)="search($event)" placeholder="Search Products">
+
+      <span class="fas fa-search search-icon"></span>
+
+
+
+      <button routerLink="register" class="form-btn btn btn-success " *ngIf="!isTokenExist()">
+        <i style= "font-size: 16px;" >Register</i>
+      </button>
+
+      <button routerLink="login" class="form-btn btn btn-secondary " *ngIf="!isTokenExist()">
+        <i style= "font-size: 16px;" >Login</i>
+      </button>
+      <button class="form-btn btn btn-success " *ngIf="isAdminTokenExist() &&  isTokenExist()" routerLink="admin" >
+        <i style= "font-size: 16px;" >Admin</i>
+      </button>
+      <button class="form-btn btn btn-danger " *ngIf="isTokenExist()" (click)="logOut()" >
+        <i style= "font-size: 16px;" >Logout</i>
+      </button>
+      <button routerLink="cart" class="btn btn-warning form-btn" *ngIf="isTokenExist()">
+        <i style= "font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size:10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+    </div>
+
+    </div>
+
+
+
+  </div>
+</header>

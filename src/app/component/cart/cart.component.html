@@ -1,0 +1,50 @@
+<ng-container *ngIf="products.length != 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Product Name</th>
+              <th>Product Image </th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of products; let i = index;">
+              <td>{{i+1}}</td>
+              <td>{{item.title}}</td>
+              <td><img  class="cart-img" src={{item.image}}/> </td>
+              <td style="width: 25%;">{{item.description}}</td>
+              <td style="width: 15%;">{{item.price}}</td>
+              <td style="width: 15%;">{{item.quantity}}</td>
+              <td style="width: 15%;">{{item.total}}</td>
+              <td>
+                <button (click)="removeCartItem(item)" class="btn btn-dark"><i class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button *ngIf="products.length>1" (click)="removeAllProductsFromCart();" class="btn btn-danger"><i class="fas fa-trash-alt"></i>Remove All</button>
+        <button *ngIf="products.length>1" (click)="Pay();" class="btn btn-success"><i ></i>Pay</button>
+        <strong> Grand Total : ${{grandTotal}}</strong>
+      </div>
+    </div>
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+  <div class="container">
+    <div class="center">
+      <img src="https://www.seekpng.com/png/detail/117-1170538_404-your-cart-is-empty.png" class="cart-img" alt="">
+
+      <button routerLink="/products" class="btn btn-warning">Shop Now</button>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,12 @@
+.table_image {
+  object-fit: scale-down;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+
+}
+
+.table {
+  margin: auto;
+}

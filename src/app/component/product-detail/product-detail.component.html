@@ -1,0 +1,24 @@
+<ng-container >
+  <div class="container">
+    <div class="card">
+      <h4 class="card-title" >{{current_product.title}}</h4>
+    </div>
+    <div class="center">
+      <img src="{{current_product.image}}" alt="" class="product-img">
+      <h6>{{current_product.description}}</h6>
+      <h4>Price: ${{current_product.price}}</h4>
+      <br/>
+      <h6 >Rate: {{current_product.rating.rate}}/5</h6>
+      <button class="btn btn-warning" (click)="addtocart(current_product)" >Add to cart</button>
+      <table>
+        <thead>
+          <th>Comment</th>
+        </thead>
+        <tbody><tr *ngFor="let item of commentList"> <b>{{item.name}}</b> : {{item.body}}</tr></tbody>
+        <tbody><tr *ngIf="commentList.length<1">There is no comment yet !</tr></tbody>
+      </table>
+
+
+    </div>
+  </div>
+</ng-container>
