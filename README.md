@@ -24,19 +24,28 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ![image](https://user-images.githubusercontent.com/98026058/162315673-4498b03b-4c01-448f-acb5-4386eda720cc.png)
 ![image](https://user-images.githubusercontent.com/98026058/162315997-605a82c0-6d9f-432a-9d0b-e2bcd69675d4.png)
 
-# Login Sonrası İlk Sayfa
+# Login Sonrası İlk Sayfa / Ürünler Sayfası
 ![image](https://user-images.githubusercontent.com/98026058/162317281-b508ee52-3b54-4247-bee4-773e6f6d2c2b.png)
 
 - List View iconuna tıklayarak ürünleri liste şeklinde de görüntüleyebiliriz. 
 ![image](https://user-images.githubusercontent.com/98026058/162319492-6a67fd31-b4bd-49d3-922e-acf40da75d4e.png)
 
-- Liste ve card şeklinde görünümlerde ürün detayları için buton bulunuyor, tıklanıldığında ürün id'lerine göre routing işlemi gerçekleşiyor.
+- Kullanıcı ürünleri özelliklerine göre filtreleyebilir (all products, electronic products, fashion products, jewelry products).
+- Arama butonundan ürün isimlerini aratabilir.
+![image](https://user-images.githubusercontent.com/98026058/159253413-5040ae32-4e44-4c73-a45a-f5406f86e932.png)
+![image](https://user-images.githubusercontent.com/98026058/159253474-1c2b507f-4cf3-4c11-9674-3590613a831b.png)
+
+- Liste ve card şeklinde görünümlerde ürün detayları için buton bulunuyor, tıklanıldığında ürün id'lerine göre routing işlemi gerçekleşiyor. 
+- Ürünlerin daha detaylı anlatıldığı bir sayfa çıkıyor.
 ![image](https://user-images.githubusercontent.com/98026058/162320703-ffa012b0-6f48-4928-ab99-b22c922df221.png)
 
 - Ürün detay sayfasınsa, ürünlere random olarak yorum atadım. Yorumlar için 'go.rest/comments' apisini kullandım.
 ![image](https://user-images.githubusercontent.com/98026058/159253763-20b8f68f-1ed0-46b9-a004-15af327141a8.png)
 
 - Ürün hem anasayfadan hem de ürün detayı sayfasından sepete eklenebilir. 
+
+
+
 
 # Sepet Sayfası 
 - Kullanıcı sepette toplam ücreti görebilir, ürünleri tek tek silebilir veya 'remove all' butonu ile tüm sepeti boşaltabilir.
