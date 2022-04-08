@@ -35,7 +35,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ![image](https://user-images.githubusercontent.com/98026058/159253413-5040ae32-4e44-4c73-a45a-f5406f86e932.png)
 ![image](https://user-images.githubusercontent.com/98026058/159253474-1c2b507f-4cf3-4c11-9674-3590613a831b.png)
 
-- Liste ve card şeklinde görünümlerde ürün detayları için buton bulunuyor, tıklanıldığında ürün id'lerine göre routing işlemi gerçekleşiyor. 
+- Liste ve card şeklinde görünümlerde ürün detayları için "See Details" buton bulunuyor, tıklanıldığında ürün id'lerine göre routing işlemi gerçekleşiyor. 
 - Ürünlerin daha detaylı anlatıldığı bir sayfa çıkıyor.
 ![image](https://user-images.githubusercontent.com/98026058/162320703-ffa012b0-6f48-4928-ab99-b22c922df221.png)
 
