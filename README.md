@@ -27,6 +27,9 @@
 - Liste ve card şeklinde görünümlerde ürün detayları için buton bulunuyor, tıklanıldığında ürün id'lerine göre routing işlemi gerçekleşiyor.
 ![image](https://user-images.githubusercontent.com/98026058/162320703-ffa012b0-6f48-4928-ab99-b22c922df221.png)
 
+- Ürün detay sayfasınsa, ürünlere random olarak yorum atadım. Yorumlar için 'go.rest/comments' apisini kullandım.
+![image](https://user-images.githubusercontent.com/98026058/159253763-20b8f68f-1ed0-46b9-a004-15af327141a8.png)
+
 - Ürün hem anasayfadan hem de ürün detayı sayfasından sepete eklenebilir. 
 
 # Sepet Sayfası 
