@@ -5,7 +5,7 @@
 # Register Form Sayfası 
 - Her kullanıcıya bir token verilir. Kullanıcının şifresini ayrıca token olarak verdim.
 - Token değeri local storagede tutuluyor.
-- Kullanıcı üye olduğunda 'gorest/users' apisine kayıt yapılıyor. Bu api için bir siteden bir key değeri aldım, header kısmında bu key değerini kullandım.
+- Kullanıcı üye olduğunda 'go.rest/users' apisine kayıt yapılıyor. Bu apyi kullanmak için siteden bir key değeri aldım, header kısmında bu key değerini kullandım.
 ![image](https://user-images.githubusercontent.com/98026058/162319190-b573a61e-ea0e-44b0-a641-376ad0adce41.png)
 ![image](https://user-images.githubusercontent.com/98026058/162314199-a68fccfa-1589-4da8-b13a-d3a242277298.png)
 ![image](https://user-images.githubusercontent.com/98026058/162314615-7b4a436c-3245-4e47-a986-00daf574c47a.png)
@@ -13,7 +13,7 @@
 
 
 # Login Form Sayfası 
-- Kullanıcı giriş yaparken 'gorest/users' apisi kontrol ediliyor. 
+- Kullanıcı giriş yaparken 'go.rest/users' apisi kontrol ediliyor. 
 - Giriş başarılı olursa direkt anasayfaya gidiyor.  
 ![image](https://user-images.githubusercontent.com/98026058/162315673-4498b03b-4c01-448f-acb5-4386eda720cc.png)
 ![image](https://user-images.githubusercontent.com/98026058/162315997-605a82c0-6d9f-432a-9d0b-e2bcd69675d4.png)
